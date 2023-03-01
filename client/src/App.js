@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import SearchBar from './components/SearchBar';
+import ProviderList from './components/ProviderList';
 
 function App() {
+  const [searchQuery, setSearchQuery] = useState('');
+  const [providers, setProviders] = useState([]);
+
+  const handleSearch = (query) => {
+    setSearchQuery(query);
+    // perform search query and update providers state
+    setProviders([...]);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Find Healthcare Providers</h1>
+      <SearchBar onSearch={handleSearch} />
+      <ProviderList providers={providers} searchQuery={searchQuery} />
     </div>
   );
 }
