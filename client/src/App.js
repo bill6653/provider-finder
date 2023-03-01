@@ -9,7 +9,7 @@ function App() {
   const handleSearch = (query) => {
     setSearchQuery(query);
     // perform search query and update providers state
-    setProviders([...]);
+    setProviders([]);
   };
 
   return (
