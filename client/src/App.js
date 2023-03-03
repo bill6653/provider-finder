@@ -6,12 +6,6 @@ function HealthcareProviderFinder() {
   const [providerType, setProviderType] = useState('');
   const [providers, setProviders] = useState([]);
 
-  const handleSearch = async () => {
-    const response = await fetch(`https://api.healthcareproviders.com/providers?location=${location}&type=${providerType}`);
-    const data = await response.json();
-    setProviders(data);
-  };
-
   return (
     <div>
       <h1>Find a Healthcare Provider</h1>
