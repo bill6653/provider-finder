@@ -1,32 +1,25 @@
-import React, { useState } from 'react';
-import ProviderList from './components/ProviderList';
+import {
+  Route, Routes
+} from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import Login from "./pages/LoginPage";
+import Registration from "./pages/RegistrationPage";
+import ResultPage from "./pages/ResultPage";
 
-function HealthcareProviderFinder() {
-  const [location, setLocation] = useState('');
-  const [providerType, setProviderType] = useState('');
-  const [providers, setProviders] = useState([]);
-
+function App() {
   return (
-    <div>
-      <h1>Find a Healthcare Provider</h1>
-      <label>
-        Location:
-        <input type="text" value={location} onChange={(e) => setLocation(e.target.value)} />
-      </label>
-      <label>
-        Provider Type:
-        <select value={providerType} onChange={(e) => setProviderType(e.target.value)}>
-          <option value="doctor">Doctor</option>
-          <option value="dentist">Dentist</option>
-          <option value="chiropractor">Chiropractor</option>
-        </select>
-      </label>
-      <button onClick={handleSearch}>Search</button>
-      <ProviderList providers={providers} />
-    </div>
+    <>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/home" element={<HomePage />} />
+        <Route path="/result" element={<ResultPage />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/registration" element={<Registration />} />
+      </Routes>
+    </>
   );
 }
 
-export default HealthcareProviderFinder;
+export default App;
 
 
