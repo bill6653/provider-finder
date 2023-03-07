@@ -1,6 +1,14 @@
 # Description
 This application will allow users to search for health care providers based on their location and medical needs. Users will be able to create an account, search for providers, and save their favorite providers to their profile.
 
+# User Story
+- AS A USER,
+- I WANT TO create an application that can be used to find the best-vetted healthcare providers near me at little to no cost,
+- SO THAT I can ensure to get the best quality service possible to fit my medical needs.
+
+# Screenshot
+![screenshot](https://user-images.githubusercontent.com/110949754/223309200-faa7fda8-f75b-4219-9554-b8bfaf6b05a7.JPG)
+
 # Technologies Used
 - React: A JavaScript library for building user interfaces.
 - GraphQL: A query language for APIs.
