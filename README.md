@@ -9,6 +9,9 @@ This application will allow users to search for health care providers based on t
 # Screenshot
 ![screenshot](https://user-images.githubusercontent.com/110949754/223309200-faa7fda8-f75b-4219-9554-b8bfaf6b05a7.JPG)
 
+# Figma Design
+https://www.figma.com/file/OuKhZTMaxqJpxVWCqwvj2M/Provider-Finder?node-id=0%3A1&t=Sz7uoP17OUmQYL8n-1
+
 # Technologies Used
 - React: A JavaScript library for building user interfaces.
 - GraphQL: A query language for APIs.
