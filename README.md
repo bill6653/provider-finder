@@ -34,6 +34,12 @@ https://www.figma.com/file/OuKhZTMaxqJpxVWCqwvj2M/Provider-Finder?node-id=0%3A1&
 - GraphQL will be used as the API for the server.
 - Queries and mutations will be used to handle user authentication, provider search, and user preferences.
 
+# Important URLS
+- Repository: 
+- Heruko:
+- Google Slides:
+- Google Doc: 
+
 # Member Contact Info.
 - Billy: billcrs512@gmail.com
 - Maria: mariaaramirez80@gmail.com
