@@ -35,10 +35,10 @@ https://www.figma.com/file/OuKhZTMaxqJpxVWCqwvj2M/Provider-Finder?node-id=0%3A1&
 - Queries and mutations will be used to handle user authentication, provider search, and user preferences.
 
 # Important URLS
-- Repository: 
+- Repository: https://github.com/bill6653/provider-finder.git
 - Heruko:
-- Google Slides:
-- Google Doc: 
+- Google Slides: https://docs.google.com/presentation/d/1sA9fOazZfu96YJOyDzUBN5WgDpCG1L7vA5JxRXw3ub0/edit?usp=sharing
+- Google Doc: https://docs.google.com/document/d/1ptWTO2dGtjWcQW0ZYSCjB663_KgJuas98yk-gjuGSbc/edit?usp=sharing
 
 # Member Contact Info.
 - Billy: billcrs512@gmail.com
