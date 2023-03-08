@@ -1,6 +1,10 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./registration.css";
+import { useMutation } from '@apollo/client';
+import { ADD_USER } from '../../utils/mutations';
+
+import Auth from '../../utils/auth';
 
 function RegistrationForm() {
   const [formData, setFormData] = useState({
@@ -11,6 +15,7 @@ function RegistrationForm() {
     confirmPassword: "",
     termsAccepted: false,
   });
+  const [addUser, { error, data }] = useMutation(ADD_USER);
 
   const handleInputChange = (event) => {
     const { name, value, type, checked } = event.target;
@@ -18,9 +23,19 @@ function RegistrationForm() {
     setFormData({ ...formData, [name]: newValue });
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async(event) => {
     event.preventDefault();
     console.log(formData);
+    try {
+      const{email, firstName, lastName} = formData
+      const { data } = await addUser({
+        variables: {email, firstName, lastName },
+      });
+
+      Auth.login(data.addUser.token);
+    } catch (e) {
+      console.error(e);
+    }
     // Add form submission logic here
   };
 
