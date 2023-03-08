@@ -21,7 +21,9 @@ function Login() {
       setErrorMessage('');
       // Login logic goes here
     }
+    console.log("handleSubmit");
   };
+  
 
   return (
     <div className="login-container">

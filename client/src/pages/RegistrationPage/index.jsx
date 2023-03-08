@@ -27,9 +27,9 @@ function RegistrationForm() {
     event.preventDefault();
     console.log(formData);
     try {
-      const{email, firstName, lastName} = formData
+      const{email, firstName, lastName, password} = formData
       const { data } = await addUser({
-        variables: {email, firstName, lastName },
+        variables: {email, firstName, lastName, password},
       });
 
       Auth.login(data.addUser.token);
